@@ -697,3 +697,4 @@ try:
     asyncio.run(interactive_mode())
 except KeyboardInterrupt:
     logger.info("Application terminated")
+
