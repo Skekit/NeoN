@@ -38,12 +38,7 @@ from test_prompts import (
 from tools import search_this, execute_archive_tool, num_tokens_from_string
 
 # ============ КОНФИГУРАЦИЯ (ЗАПОЛНИТЕ СВОИ ЗНАЧЕНИЯ!) ============
-API_KEYS: List[str] = [
-    "AIzaSyAfPK51eeunFf5x43595zwZTOx7JH-mdhA",
-    "AIzaSyDvLf0xvq1KLiNMwi6rHw74I-AB2u8ewMk",
-    "AIzaSyD1FPjyHlYnydiUbfyOs-FaihHiDnGjdV0",
-    "AIzaSyBBzBx-R4gPDOTiBuWGbHvayCFiC4_tEn0",
-]
+API_KEYS = ["key"]
 MODEL_NAME: str = "gemma-3-27b-it"
 MAX_TOKENS_PER_AGENT: int = 15000
 RATE_LIMIT_REQUESTS_PER_MINUTE: int = 60
@@ -697,4 +692,5 @@ try:
     asyncio.run(interactive_mode())
 except KeyboardInterrupt:
     logger.info("Application terminated")
+
 
